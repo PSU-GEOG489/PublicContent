@@ -20,10 +20,6 @@ namespace Lesson1_PracticeExercises
             x = Interaction.InputBox("Please enter your name");
             string y;
             MessageBox.Show("Hi" + x + "!", "Practice 3", MessageBoxButtons.OK);
-
-            //y = "Hi" + x + "!";
-            //MessageBox.Show(y, "Practice 3", MessageBoxButtons.OK);
-            
         }
 
         protected override void OnClick()
