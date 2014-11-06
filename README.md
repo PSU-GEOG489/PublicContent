@@ -18,8 +18,7 @@ This README is designed for students of Penn State World Campus GEOG 489 GIS Pro
 
 ### Who do I talk to? ###
 
-* The repository owner is Andrew Murdoch (ahm126@psu.edu)
-
+* The repository owner and instructor of GEOG489 is Andrew Murdoch (ahm126@psu.edu)
 
 
 The README is written using Markdown text formatting:
