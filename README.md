@@ -5,6 +5,7 @@ This README is designed for students of Penn State World Campus GEOG 489 GIS Pro
 ### What is this repository for? ###
 
 * All course practice exercise solution source code and solution explanations are available for check out from this git repository.
+* C# Practice Exercise Explanations are found [here][csharp].
 * You are encouraged to browse the repository, fork the repository and contribute changes if you uncover a flaw in the source code or explanation text.
 * Version 0.1
 
@@ -24,3 +25,5 @@ This README is designed for students of Penn State World Campus GEOG 489 GIS Pro
 The README is written using Markdown text formatting:
 
 [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+[csharp] /geog489/wiki/browse/C%23
