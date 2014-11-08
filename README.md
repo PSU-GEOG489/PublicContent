@@ -6,8 +6,11 @@ This README is designed for students of Penn State World Campus GEOG 489 GIS Pro
 
 * All course practice exercise solution source code and solution explanations are available for check out from this git repository.
 * C# Practice Exercise Explanations are found [here][csharp].
+* VB.NET Practice Exercise Explanations are found [here][vbnet].
+
 * You are encouraged to browse the repository, fork the repository and contribute changes if you uncover a flaw in the source code or explanation text.
 * Version 0.1
+
 
 ### How do I get set up? ###
 
@@ -26,4 +29,5 @@ The README is written using Markdown text formatting:
 
 [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-[csharp] /geog489/wiki/browse/C%23
+[csharp]: /ahm126/geog489/wiki/browse/C%23
+[vbnet]: /ahm126/geog489/wiki/browse/VB.NET
