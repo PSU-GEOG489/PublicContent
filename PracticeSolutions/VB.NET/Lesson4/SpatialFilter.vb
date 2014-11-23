@@ -41,7 +41,7 @@ Public Class SpatialFilter
         pGeom = pStateFeature.Shape   '** Getting the PA polygon geometry
 
         Dim pSpatialFilter As ISpatialFilter
-        pSpatialFilter = New SpatialFilter
+        pSpatialFilter = New SpatialFilterClass
 
         With pSpatialFilter
             .Geometry = pGeom       '** Setting equal to PA shape
@@ -60,8 +60,6 @@ Public Class SpatialFilter
 
         lngPopclassIndex = pCityFClass.Fields.FindField("POPCLASS")
         lngCityNameIndex = pCityFClass.Fields.FindField("NAME")
-
-
 
         Dim pCityFeature As IFeature
         pCityFeature = pCityFCursor.NextFeature
