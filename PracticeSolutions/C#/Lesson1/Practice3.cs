@@ -18,7 +18,6 @@ namespace Lesson1_PracticeExercises
         {
             string x;
             x = Interaction.InputBox("Please enter your name");
-            string y;
             MessageBox.Show("Hi" + x + "!", "Practice 3", MessageBoxButtons.OK);
         }
 
