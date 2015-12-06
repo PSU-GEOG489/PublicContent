@@ -34,7 +34,11 @@ The README is written using Markdown text formatting:
 [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 [csharpcode]: https://bitbucket.org/ahm126/geog489/src/master/PracticeSolutions/C%23/?at=master
+[vbnetcode]: https://bitbucket.org/ahm126/geog489/src/master/PracticeSolutions/VB.NET/?at=master
+[csharp]: https://bitbucket.org/ahm126/geog489/wiki/browse/C%23
+[vbnet]: https://bitbucket.org/ahm126/geog489/wiki/browse/VB.NET
+
 [csharpcode_old]: /ahm126/geog489/src/master/PracticeSolutions/C%23/?at=master
-[vbnetcode]: /ahm126/geog489/src/master/PracticeSolutions/VB.NET/?at=master
-[csharp]: /ahm126/geog489/wiki/browse/C%23
-[vbnet]: /ahm126/geog489/wiki/browse/VB.NET
+[vbnetcode_old]: /ahm126/geog489/src/master/PracticeSolutions/VB.NET/?at=master
+[csharp_old]: /ahm126/geog489/wiki/browse/C%23
+[vbnet_old]: /ahm126/geog489/wiki/browse/VB.NET
