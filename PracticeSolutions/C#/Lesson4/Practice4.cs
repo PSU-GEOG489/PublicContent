@@ -68,11 +68,11 @@ namespace Lesson4_Text
             pSpatialFilter.GeometryField = "SHAPE";
             pSpatialFilter.SpatialRel = esriSpatialRelEnum.esriSpatialRelIntersects;  //** Getting roads that intersect NY
           
-            IFeatureSelection pFSel = default(IFeatureSelection);
+            IFeatureSelection pFSel;
             pFSel = (IFeatureSelection)pRoadLayer;  //** QI
             pFSel.SelectFeatures(pSpatialFilter, esriSelectionResultEnum.esriSelectionResultNew, false);
 
-            IActiveView pActiveView = default(IActiveView);
+            IActiveView pActiveView;
             pActiveView = (IActiveView)pMap;
             pActiveView.Refresh();
         }
