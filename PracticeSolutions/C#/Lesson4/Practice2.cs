@@ -58,7 +58,7 @@ namespace Lesson4_Text
             intCodeField = pTable.FindField("LU_Code");
             intDescField = pTable.FindField("LU_Desc");
 
-            IRow pRow = default(IRow);
+            IRow pRow;
             pRow = pTable.CreateRow();
             pRow.Value[intCodeField] = "RES";
             pRow.Value[intDescField] = "Residential";
