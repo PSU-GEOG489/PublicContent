@@ -24,10 +24,10 @@ namespace Lesson4_Text
             IMap pMap;
             pMap = pMxDoc.FocusMap;
 
-            IWorkspaceFactory pWFactory = default(IWorkspaceFactory);
+            IWorkspaceFactory pWFactory;
             pWFactory = new ShapefileWorkspaceFactory();
 
-            IFeatureWorkspace pFWorkspace = default(IFeatureWorkspace);
+            IFeatureWorkspace pFWorkspace;
             pFWorkspace = (IFeatureWorkspace)pWFactory.OpenFromFile("c:/temp",ArcMap.Application.hWnd);
 
             IFieldsEdit pFieldsEdit;
