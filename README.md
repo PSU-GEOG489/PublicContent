@@ -33,7 +33,7 @@ The README is written using Markdown text formatting:
 
 [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-[csharpcode]: https://bitbucket.org/ahm126/geog489/src/master/PracticeSolutions/C%23/?at=master
+[csharpcode]: https://github.com/PSU-GEOG489/PublicContent/tree/master/PracticeSolutions/C%23/?at=master
 [vbnetcode]: https://bitbucket.org/ahm126/geog489/src/master/PracticeSolutions/VB.NET/?at=master
 [csharp]: https://bitbucket.org/ahm126/geog489/wiki/browse/C%23
 [vbnet]: https://bitbucket.org/ahm126/geog489/wiki/browse/VB.NET
