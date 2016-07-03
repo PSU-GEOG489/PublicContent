@@ -1,0 +1,3 @@
+# Explanation: #
+
+This exercise is very similar to the example in Part I-C. The difference is that you are to ask the user which data frame to activate. This is done using an InputBox and storing the entry in a String variable. A For loop is used to loop through all the Maps in the MxDocument. Within the loop an If-Then block is used to look for a match between the user's string and the map's name. When a match is found, the Map is set as the ActiveView and the loop is exited.

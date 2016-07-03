@@ -1,0 +1,13 @@
+# Explanation: #
+
+This exercise requires you to get the enumeration of Layers in the active data frame and loop through them until you find the one named U.S. Cities. You will need an assembly reference to ESRI.ArcGIS.Display and the corresponding Imports statement.  Your variable that references that layer will probably point to it through the ILayer interface. Changing the symbology of a FeatureLayer requires that you work with its IGeoFeatureLayer interface. Thus, this is a situation that requires you to perform a Query Interface. You declare a pointer to the interface you want to use, then set that pointer equal to the variable that references the desired object. Here, the Dim line is used to set up pGeoFLayer as a pointer to IGeoFeatureLayer. The Set line is used to tell the computer that you want pGeoFLayer to reference the same object referenced by pLayer.
+
+IGeoFeatureLayer is needed to get to the layer's FeatureRenderer object, which stores how the layer is to be symbolized. FeatureRenderer is an abstract class, meaning that when you want to change symbology you need to work with one of the sub-classes of FeatureRenderer: SimpleRenderer, UniqueValueRenderer, ClassBreaksRenderer, etc. In this case you want all of the features in the layer to be displayed using the same symbol, so you'll want to create a new SimpleRenderer.
+
+The most important property of a SimpleRenderer to set is its Symbol. Therefore, before creating the new renderer, in my code above I've created a Symbol object and set its properties. Symbol is another example of an abstract class. In fact, the sub-classes of Symbol (MarkerSymbol, LineSymbol, FillSymbol) are abstract classes themselves. Because you know you're dealing with a point layer, you know that you'll need to create some type of MarkerSymbol. Of the various types of MarkerSymbol sub-classes, the SimpleMarkerSymbol class is the one used to set up the basic point symbols you're used to working with. The symbol is set to an "X" by setting the Style property to ESRI.ArcGIS.Display.esriSimpleMarkerStyle.esriSMSX.
+
+With the Symbol object created, you're ready to create the SimpleRenderer and set its Symbol property.
+
+With the Renderer set up, you're ready to set the layer's Renderer property, which is accessed through the pGeoFLayer variable.
+
+Because changes are being made to a layer's symbology, the procedure ends with code that refreshes the map display and updates the Table of Contents.

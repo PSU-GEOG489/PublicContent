@@ -1,0 +1,13 @@
+# Explanation: #
+
+In the instructions you're told that you can assume that the States layer is the first layer in the active data frame. To rename this layer, you should begin by using the same code you used to get a pointer to the active data frame in the last example. Since you know you want the first layer, using the Map's Layer property with the appropriate index position (0) is the way to go. In the next lesson you'll see how to obtain a Layer when you don't know where it will be in the list of layers.
+
+Reading the Layer property will return a Layer object and you'll need to declare a variable to store a reference to this object. As with reading the FocusMap property, you should look at the OMD or in the Developer Help to see what type of variable to declare. Both resources list ILayer as the return type.
+
+You may be confused at this point if you compare the code in this procedure with the code in the example from Part III of Lesson 1. In that example, the return object from the Layer property was stored in a pointer to IFeatureLayer2, not ILayer. Why the difference? The important point to understand is that both of the layers in these examples are FeatureLayer objects. This means that you can store a reference to these objects in a pointer to any of the FeatureLayer interfaces, or to any of the interfaces defined for one of the classes FeatureLayer inherits from (includingILayer because FeatureLayer inherits from Layer). In the previous lesson example, I wanted to work with the DisplayField property, so I chose to work with the IFeatureLayer2 interface. In this exercise, you need to work with the Name property, which requires you to use the ILayer interface.
+
+The reason ILayer is listed as the return value in the OMD and Developer Help is that when you read the Layer property, you could get back a number of different object types (FeatureLayer,RasterLayer, CadLayer, etc.). ILayer is an interface that all layers share in common. Thus, you can never go wrong if you store the layer object in a pointer to ILayer. On the other hand, if you tried to store a RasterLayer object in a pointer to IFeatureLayer2, your code would crash because RasterLayers don't support that interface.
+
+Getting back to the procedure, you simply use the syntax object.property = newvalue.
+
+Finally, a call to the UpdateContents method of the MxDocument (accessed through the pointer to IMxDocument) is made to ensure that the name change is reflected in the Table of Contents.

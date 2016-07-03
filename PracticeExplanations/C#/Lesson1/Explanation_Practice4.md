@@ -1,0 +1,7 @@
+# Explanation: #
+To access the *IMxDocument* interface, you will first need to reference the **ESRI.ArcGIS.ArcMapUI** assembly.  The assembly is already loaded when you created the ESRI Add-In project, but you need to add an *using* statement to use the short name of the object.  *Using* statements will be discussed in more detail in later lessons.
+
+This procedure is designed to give you practice with reading an object property and storing the return value in a variable. To get to the *MxDocument's* *SearchTolerancePixels* property, you have to work with the *IMxDocument* interface. Declaring a variable that points to this interface and initializing that variable is illustrated in the first two lines of the test procedure from Part III-A. Keep in mind that the naming of variables is up to you. Other logical names for the pointer to *IMxDocument* besides pMxDoc might be pMxDocument or pMXD.
+
+With the pointer to *IMxDocument* set up, you're able to read the *SearchTolerancePixels* property using the object.property syntax. However, you first need to declare a variable to store the property's return value. The variable that's declared for this purpose in the solution above is *lngSearchTol*. Again, your variable may be named differently, but it should be declared as a *long*. With the *long* variable declared, you're ready to read the property and store the return value. The selection tolerance can then be reported to the user using a *MessageBox* (after first referencing the **System.Windows.Forms** assembly and inserting a *using* statement).
+

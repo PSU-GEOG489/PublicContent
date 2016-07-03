@@ -1,0 +1,7 @@
+# Explanation: #
+
+In this procedure you are to add three records to the lu_codes table created in the last exercise. Since the table is loaded in the active Map, a QI is used to work with the ITableCollection interface.
+
+Looping through the tables in the data frame requires using a For loop and the TableCount property. On each pass through the loop, the ith table is obtained using the Table property. This object is stored in a pointer to ITable. Because the name of the table is needed, a switch is made to the IDataset interface. A Boolean variable is used to keep track of whether the table is found or not. This variable is checked outside the loop and the procedure is exited if the table was not found.
+
+From there, the FindField method is used to obtain the positions of the two fields. Next, CreateRow is used to create a new Row object, which is stored in a pointer to IRow. IRow::Value is then used to set the row's values (specifying the position of the field whose value you want to set). After setting the value, the Store method is called to commit the values to the row. Note that the same pRow variable is re-used for each new row. Each call to CreateRow gets stored in pRow, overwriting the old Row object.
