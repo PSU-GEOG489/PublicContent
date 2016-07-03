@@ -53,4 +53,3 @@ The README is written using Markdown text formatting:
 [vbnetcode_old]: /ahm126/geog489/src/master/PracticeSolutions/VB.NET/?at=master
 [csharp_old]: /ahm126/geog489/wiki/browse/C%23
 [vbnet_old]: /ahm126/geog489/wiki/browse/VB.NET
->>>>>>> Stashed changes
