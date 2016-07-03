@@ -13,7 +13,7 @@ This README is designed for students of Penn State World Campus GEOG 489 GIS Pro
 * VB.NET Practice Exercise Explanations are found [here][vbnet].
 
 * You are encouraged to browse the repository, fork the repository and contribute changes if you uncover a flaw in the source code or explanation text.
-* Version 0.1
+* Version 1.0
 
 
 ### How do I get set up? ###
@@ -31,14 +31,10 @@ This README is designed for students of Penn State World Campus GEOG 489 GIS Pro
 
 The README is written using Markdown text formatting:
 
-[Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+[Learn Markdown](https://guides.github.com/features/mastering-markdown/)
 
 [csharpcode]: https://github.com/PSU-GEOG489/PublicContent/tree/master/PracticeSolutions/C%23/?at=master
-[vbnetcode]: https://bitbucket.org/ahm126/geog489/src/master/PracticeSolutions/VB.NET/?at=master
-[csharp]: https://bitbucket.org/ahm126/geog489/wiki/browse/C%23
-[vbnet]: https://bitbucket.org/ahm126/geog489/wiki/browse/VB.NET
+[vbnetcode]: https://github.com/PSU-GEOG489/PublicContent/tree/master/PracticeSolutions/VB.NET/?at=master
+[csharp]: https://github.com/PSU-GEOG489/PublicContent/tree/master/PracticeExplanations/C%23
+[vbnet]: https://github.com/PSU-GEOG489/PublicContent/tree/master/PracticeExplanations/VB.NET
 
-[csharpcode_old]: /ahm126/geog489/src/master/PracticeSolutions/C%23/?at=master
-[vbnetcode_old]: /ahm126/geog489/src/master/PracticeSolutions/VB.NET/?at=master
-[csharp_old]: /ahm126/geog489/wiki/browse/C%23
-[vbnet_old]: /ahm126/geog489/wiki/browse/VB.NET
