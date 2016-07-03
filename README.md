@@ -18,11 +18,11 @@ This README is designed for students of Penn State World Campus GEOG 489 GIS Pro
 
 ### How do I get set up? ###
 
-* Optionally, install GitHub Desktop GUI tools [here][https://desktop.github.com/].
-  * Some resources to learn GitHub Desktop tools [here][https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=git+desktop+tutorial].
-  * Some resources to learn GitHub concepts [here][https://guides.github.com/]
-* Or, just install Git command line tools (installed by default with GitHub Desktop) [here][https://git-scm.com/downloads]
-  * Some resources for Git concepts in general [here][https://git-scm.com/book/en/v2/Getting-Started-Git-Basics] and [here][https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=git+101+tutorial]
+* Optionally, install GitHub Desktop GUI tools [here][githubdesktopdownload].
+  * Some resources to learn GitHub Desktop tools [here][githubdesktopresources].
+  * Some resources to learn GitHub concepts [here][githubresources]
+* Or, just install Git command line tools (installed by default with GitHub Desktop) [here][gitcommandlinedownload]
+  * Some resources for Git concepts in general [here][gitconcepts1] and [here][gitconcepts2]
 
 ### Contribution guidelines ###
 
@@ -42,8 +42,13 @@ The README is written using Markdown text formatting:
 [csharp]: https://github.com/PSU-GEOG489/PublicContent/tree/master/PracticeExplanations/C%23
 [vbnet]: https://github.com/PSU-GEOG489/PublicContent/tree/master/PracticeExplanations/VB.NET
 
-<<<<<<< Updated upstream
-=======
+[githubdesktopdownload]:https://desktop.github.com/
+[githubdesktopresources]:https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=git+desktop+tutorial
+[githubresources]:https://guides.github.com/
+[gitcommandlinedownload]:https://git-scm.com/downloads
+[gitconcepts1]:https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+[gitconcepts2]:https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=git+101+tutorial
+
 [csharpcode_old]: /ahm126/geog489/src/master/PracticeSolutions/C%23/?at=master
 [vbnetcode_old]: /ahm126/geog489/src/master/PracticeSolutions/VB.NET/?at=master
 [csharp_old]: /ahm126/geog489/wiki/browse/C%23
