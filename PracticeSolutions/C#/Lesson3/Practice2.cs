@@ -17,7 +17,7 @@ namespace Lesson3_Text
         }
 
         public void PracticeExercise2()
-        {
+                {
             IMxDocument pMxDoc;
             pMxDoc = (IMxDocument)ArcMap.Application.Document;
 
@@ -29,32 +29,18 @@ namespace Lesson3_Text
 
             IWorkspace pWorkspace;
             pWorkspace = pWSFactory.OpenFromFile("c:\\WCGIS\\G5224P\\Lesson1_2_3", ArcMap.Application.hWnd);
-
+            
             //QI
             IFeatureWorkspace pFWorkspace;
             pFWorkspace = (IFeatureWorkspace)pWorkspace;
 
+            string strFileName = "us_boundaries";
+            string strLyrName = "U.S. States";
+            ShapefileToLayer(pFWorkspace, pMap, strFileName, strLyrName);
 
-            IFeatureClass pStatesFClass;
-            pStatesFClass = pFWorkspace.OpenFeatureClass("us_boundaries");
-
-            IFeatureLayer pStatesLayer;
-            pStatesLayer = new FeatureLayer();
-            pStatesLayer.FeatureClass = pStatesFClass;
-            pStatesLayer.Name = "U.S. States";
-
-            pMap.AddLayer(pStatesLayer);
-
-            IFeatureClass pCitiesFClass;
-            pCitiesFClass = pFWorkspace.OpenFeatureClass("us_cities");
-
-            IFeatureLayer pCitiesLayer;
-
-            pCitiesLayer = new FeatureLayer();
-            pCitiesLayer.FeatureClass = pCitiesFClass;
-            pCitiesLayer.Name = "U.S. Cities";
-
-            pMap.AddLayer(pCitiesLayer);
+            strFileName = "us_cities";
+            strLyrName = "U.S. Cities";
+            ShapefileToLayer(pFWorkspace, pMap, strFileName, strLyrName);
 
             IActiveView pActiveView;
             pActiveView = (IActiveView)pMap;
@@ -63,6 +49,19 @@ namespace Lesson3_Text
             pMxDoc.UpdateContents();
         }
 
+        private void ShapefileToLayer(IFeatureWorkspace pFWorkspace, IMap pMap, string strFileName, string strLyrName)
+        {
+            IFeatureClass pFClass;
+            pFClass = pFWorkspace.OpenFeatureClass(strFileName);
+
+            IFeatureLayer pLayer;
+            pLayer = new FeatureLayer();
+            pLayer.FeatureClass = pFClass;
+            pLayer.Name = strLyrName;
+
+            pMap.AddLayer(pLayer);
+        }
+        
         protected override void OnClick()
         {
             PracticeExercise2();
